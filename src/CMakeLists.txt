@@ -15,7 +15,7 @@ target_include_directories(NeetCode
 # we use this to get code coverage
 # flags are only valid with the GNU compiler and on Linux
 if (CMAKE_CXX_COMPILER_ID MATCHES GNU AND CMAKE_HOST_SYSTEM_NAME STREQUAL "Linux")
-    target_compile_options(example
+    target_compile_options(NeetCode
             PUBLIC
             "--coverage"
             )

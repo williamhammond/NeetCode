@@ -19,7 +19,7 @@ if (CMAKE_CXX_COMPILER_ID MATCHES GNU AND CMAKE_HOST_SYSTEM_NAME STREQUAL "Linux
             PUBLIC
             "--coverage"
             )
-    target_link_options(example
+    target_link_options(NeetCode
             INTERFACE
             "--coverage"
             )

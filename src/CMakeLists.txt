@@ -1,4 +1,4 @@
-add_library(NeetCode arrays/private/ValidAnagram.cpp arrays/public/ValidAnagram.h)
+add_library(NeetCode arrays/private/ValidAnagram.cpp arrays/public/ValidAnagram.h arrays/private/TwoSum.cpp arrays/public/TwoSum.h)
 
 target_sources(
         NeetCode

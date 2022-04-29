@@ -1,7 +1,6 @@
 #ifndef NEETCODE_CONTAINSDUPLICATES_H
 #define NEETCODE_CONTAINSDUPLICATES_H
 
-
 #include <vector>
 
 using std::vector;

@@ -2,6 +2,8 @@
 #include "../../src/arrays/public/GroupAnagrams.h"
 
 #include<algorithm>
+#include<unordered_map>
+#include<string>
 
 TEST(GroupAnagrams, exmaple) {
     std::vector<std::vector<std::string>> expected = {{"bat"},

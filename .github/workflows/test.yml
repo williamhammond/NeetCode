@@ -19,10 +19,10 @@ jobs:
 
             -   name: Configure
                 run: |
-                    cmake --std=c++14 -S. -Bbuild -DCMAKE_BUILD_TYPE=Debug
+                    cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Debug
             -   name: Build
                 run: |
-                    cmake --std=c++14 --build build --config Debug
+                    cmake --build build --config Debug
             -   name: Test
                 run: |
                     cd build

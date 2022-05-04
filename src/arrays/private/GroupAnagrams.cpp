@@ -1,5 +1,9 @@
 #include "arrays/public/GroupAnagrams.h"
 
+#include<algorithm>
+#include<unordered_map>
+#include<string>
+
 std::vector<std::vector<std::string>> GroupAnagrams::solve(std::vector<std::string> &strs) {
     std::unordered_map<std::string, std::vector<std::string>> groups;
     for (const auto &str: strs) {

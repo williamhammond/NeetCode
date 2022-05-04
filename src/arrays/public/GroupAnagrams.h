@@ -3,8 +3,6 @@
 
 #include <string>
 #include <vector>
-#include <algorithm>
-#include <cstring>
 
 class GroupAnagrams {
 public:

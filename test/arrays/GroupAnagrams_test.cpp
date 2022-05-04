@@ -14,7 +14,8 @@ TEST(GroupAnagrams, exmaple) {
     }
     std::sort(expected.begin(), expected.end(),
               [](const std::vector<std::string> &a, const std::vector<std::string> &b) {
-                  return a.size() - b.size();
+                  return (a.size() < b.size()) ||
+                         (!(a.size() > b.size()) && (a.size() < b.size()));
               });
 
     std::vector<std::string> input = {"eat", "tea", "tan", "ate", "nat", "bat"};
@@ -24,7 +25,8 @@ TEST(GroupAnagrams, exmaple) {
     }
     std::sort(actual.begin(), actual.end(),
               [](const std::vector<std::string> &a, const std::vector<std::string> &b) {
-                  return a.size() - b.size();
+                  return (a.size() < b.size()) ||
+                         (!(a.size() > b.size()) && (a.size() < b.size()));
               });
 
     EXPECT_EQ(expected, actual) << "Anagrams grouped incorrectly";

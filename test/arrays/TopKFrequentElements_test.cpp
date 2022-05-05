@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include "../../src/arrays/public/TopKFrequentElements.h"
+#include <algorithm>
+#include <vector>
 
 TEST(TopKFrequentElements, solves) {
     std::vector<int> input = {1, 2, 3};

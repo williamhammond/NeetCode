@@ -1,6 +1,6 @@
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(NeetCode arrays/private/ValidAnagram.cpp arrays/public/ValidAnagram.h arrays/private/TwoSum.cpp arrays/public/TwoSum.h arrays/private/GroupAnagrams.cpp arrays/public/GroupAnagrams.h)
+add_library(NeetCode arrays/private/ValidAnagram.cpp arrays/public/ValidAnagram.h arrays/private/TwoSum.cpp arrays/public/TwoSum.h arrays/private/GroupAnagrams.cpp arrays/public/GroupAnagrams.h arrays/private/TopKFrequentElements.cpp arrays/public/TopKFrequentElements.h)
 
 target_sources(
         NeetCode

@@ -3,6 +3,7 @@
 #include <vector>
 #include <unordered_map>
 #include <queue>
+#include <algorithm>
 
 std::vector<int> TopKFrequentElements::solve(std::vector<int> &nums, int k) {
     std::unordered_map<int, int> frequencies;

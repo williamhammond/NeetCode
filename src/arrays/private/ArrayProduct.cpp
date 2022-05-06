@@ -5,7 +5,7 @@ std::vector<int> ArrayProduct::solve(std::vector<int> &nums) {
     int n = nums.size();
     std::vector<int> left_product(n);
     left_product[0] = 1;
-    for (int i = 1; i < nums.size(); i++) {
+    for (std::size_t i = 1; i < nums.size(); i++) {
         left_product[i] = left_product[i - 1] * nums[i - 1];
     }
 

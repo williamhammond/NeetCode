@@ -1,9 +1,11 @@
 #include "arrays/public/ValidAnagram.h"
 
-bool ValidAnagram::solve(string s, string t) {
+#include<unordered_map>
+
+bool ValidAnagram::solve(std::string s, std::string t) {
     if (s.length() != t.length()) return false;
     int n = s.length();
-    unordered_map<char, int> counts;
+    std::unordered_map<char, int> counts;
     for (int i = 0; i < n; i++) {
         counts[s[i]]++;
         counts[t[i]]--;

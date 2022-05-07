@@ -9,10 +9,8 @@ target_sources(
 
 target_include_directories(NeetCode PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 
-# we use this to get code coverage flags are only valid with the GNU compiler
-# and on Linux
-if (CMAKE_CXX_COMPILER_ID MATCHES GNU AND CMAKE_HOST_SYSTEM_NAME STREQUAL
-        "Linux")
-    target_compile_options(NeetCode PUBLIC "--coverage")
-    target_link_options(NeetCode INTERFACE "--coverage")
+if (MSVC)
+    target_compile_options(NeetCode PRIVATE /W4 /WX)
+else ()
+    target_compile_options(NeetCode PRIVATE -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion)
 endif ()

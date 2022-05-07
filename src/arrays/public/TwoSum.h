@@ -8,7 +8,7 @@ using std::vector;
 
 class TwoSum {
 public:
-    static vector<int> solve(vector<int> &nums, int target);
+    static vector<std::size_t> solve(vector<int> &nums, int target);
 };
 
 #endif //NEETCODE_TWOSUM_H

@@ -2,7 +2,7 @@
 #include "iostream"
 
 std::vector<int> ArrayProduct::solve(std::vector<int> &nums) {
-    int n = nums.size();
+    std::size_t n = nums.size();
     std::vector<int> left_product(n);
     left_product[0] = 1;
     for (std::size_t i = 1; i < nums.size(); i++) {
@@ -11,12 +11,13 @@ std::vector<int> ArrayProduct::solve(std::vector<int> &nums) {
 
     std::vector<int> right_product(n);
     right_product[n - 1] = 1;
-    for (int j = n - 2; j >= 0; j--) {
+    for (std::size_t j = n - 2; j != 0; j--) {
         right_product[j] = right_product[j + 1] * nums[j + 1];
     }
+    right_product[0] = right_product[1] * nums[1];
 
     std::vector<int> result(n);
-    for (int k = 0; k < n; k++) {
+    for (std::size_t k = 0; k < n; k++) {
         result[k] = left_product[k] * right_product[k];
     }
 

@@ -21,7 +21,7 @@ target_link_libraries(unit_tests PRIVATE NeetCode gtest_main)
 if (MSVC)
     target_compile_options(unit_tests PRIVATE /W4 /WX)
 else ()
-    target_compile_options(unit_tests PRIVATE -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef)
+    target_compile_options(unit_tests PRIVATE -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion)
 endif ()
 
 # automatic discovery of unit tests

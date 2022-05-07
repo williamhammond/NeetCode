@@ -11,10 +11,9 @@ std::vector<int> ArrayProduct::solve(std::vector<int> &nums) {
 
     std::vector<int> right_product(n);
     right_product[n - 1] = 1;
-    for (std::size_t j = n - 2; j != 0; j--) {
-        right_product[j] = right_product[j + 1] * nums[j + 1];
+    for (std::size_t j = n - 1; j != 0; j--) {
+        right_product[j - 1] = right_product[j] * nums[j];
     }
-    right_product[0] = right_product[1] * nums[1];
 
     std::vector<int> result(n);
     for (std::size_t k = 0; k < n; k++) {

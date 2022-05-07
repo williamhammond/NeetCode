@@ -8,3 +8,9 @@ target_sources(
         PUBLIC arrays/public/ContainsDuplicates.h)
 
 target_include_directories(NeetCode PUBLIC ${CMAKE_CURRENT_LIST_DIR})
+
+if (MSVC)
+    target_compile_options(NeetCode PRIVATE /W4 /WX)
+else ()
+    target_compile_options(NeetCode PRIVATE -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef)
+endif ()

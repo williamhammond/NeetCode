@@ -18,6 +18,12 @@ add_executable(unit_tests arrays/ContainsDuplicates_test.cpp arrays/ValidAnagram
 
 target_link_libraries(unit_tests PRIVATE NeetCode gtest_main)
 
+if (MSVC)
+    target_compile_options(unit_tests PRIVATE /W4 /WX)
+else ()
+    target_compile_options(unit_tests PRIVATE -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef)
+endif ()
+
 # automatic discovery of unit tests
 include(GoogleTest)
 gtest_discover_tests(

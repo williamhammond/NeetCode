@@ -1,6 +1,8 @@
 #include "arrays/public/TwoSum.h"
+#include "pointers/public/TwoSum2.h"
 
-vector<std::size_t> TwoSum::solve(vector<int> &nums, int target) {
+
+vector<std::size_t> TwoSum2::solve(vector<int> &nums, int target) {
     std::unordered_map<int, std::size_t> indexes;
     for (std::size_t i = 0; i < nums.size(); i++) {
         auto it = indexes.find(target - nums[i]);
@@ -12,3 +14,4 @@ vector<std::size_t> TwoSum::solve(vector<int> &nums, int target) {
     }
     return {};
 }
+

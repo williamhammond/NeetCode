@@ -14,7 +14,7 @@ set(BUILD_GMOCK
         CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(gtest)
 
-add_executable(unit_tests arrays/ContainsDuplicates_test.cpp arrays/ValidAnagram_test.cpp arrays/TwoSum_test.cpp arrays/GroupAnagrams_test.cpp arrays/TopKFrequentElements_test.cpp arrays/ArrayProduct_test.cpp arrays/Sudoku_test.cpp arrays/Codec_test.cpp arrays/LongestSequence_test.cpp pointers/ValidPalindrome_test.cpp)
+add_executable(unit_tests arrays/ContainsDuplicates_test.cpp arrays/ValidAnagram_test.cpp arrays/TwoSum_test.cpp arrays/GroupAnagrams_test.cpp arrays/TopKFrequentElements_test.cpp arrays/ArrayProduct_test.cpp arrays/Sudoku_test.cpp arrays/Codec_test.cpp arrays/LongestSequence_test.cpp pointers/ValidPalindrome_test.cpp pointers/TwoSum2_test.cpp)
 
 target_link_libraries(unit_tests PRIVATE NeetCode gtest_main)
 

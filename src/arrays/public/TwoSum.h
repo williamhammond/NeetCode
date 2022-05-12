@@ -6,7 +6,7 @@
 
 using std::vector;
 
-class TwoSum {
+class TwoSum2 {
 public:
     static vector<std::size_t> solve(vector<int> &nums, int target);
 };

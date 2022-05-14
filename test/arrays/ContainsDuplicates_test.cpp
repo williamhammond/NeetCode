@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/ContainsDuplicates.h"
+#include "arrays/ContainsDuplicates.h"
 
 TEST(ContainsDuplicates, NoDuplicateSimple) {
     std::vector<int> input = {1, 2, 3, 4};

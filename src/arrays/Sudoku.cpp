@@ -1,4 +1,4 @@
-#include "arrays/public/Sudoku.h"
+#include "Sudoku.h"
 #include <set>
 #include<string>
 

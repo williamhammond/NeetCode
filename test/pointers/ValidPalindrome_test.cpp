@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/pointers/public/ValidPalindrome.h"
+#include "pointers/ValidPalindrome.h"
 #include <string>
 
 TEST(ValidPalindrome, solves) {

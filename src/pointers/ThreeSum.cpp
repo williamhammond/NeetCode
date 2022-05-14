@@ -1,4 +1,4 @@
-#include "pointers/public/ThreeSum.h"
+#include "pointers/ThreeSum.h"
 
 #include <algorithm>
 #include <vector>

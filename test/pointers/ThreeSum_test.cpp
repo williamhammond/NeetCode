@@ -1,6 +1,6 @@
 
 #include <gtest/gtest.h>
-#include "../../src/pointers/public/ThreeSum.h"
+#include "pointers/ThreeSum.h"
 #include <vector>
 
 TEST(ThreeSum, it_solves_empty) {

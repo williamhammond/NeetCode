@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/pointers/public/TwoSum2.h"
+#include "pointers/TwoSum2.h"
 #include <vector>
 
 TEST(TwoSum, it_solves_simple) {

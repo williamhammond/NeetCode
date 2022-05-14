@@ -1,11 +1,11 @@
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(NeetCode arrays/private/ValidAnagram.cpp arrays/public/ValidAnagram.h arrays/private/TwoSum.cpp arrays/public/TwoSum.h arrays/private/GroupAnagrams.cpp arrays/public/GroupAnagrams.h arrays/private/TopKFrequentElements.cpp arrays/public/TopKFrequentElements.h arrays/private/ArrayProduct.cpp arrays/public/ArrayProduct.h arrays/private/Sudoku.cpp arrays/public/Sudoku.h arrays/private/Codec.cpp arrays/public/Codec.h arrays/private/LongestSequence.cpp arrays/public/LongestSequence.h pointers/private/ValidPalindrome.cpp pointers/public/ValidPalindrome.h pointers/private/TwoSum2.cpp pointers/public/TwoSum2.h pointers/private/ThreeSum.cpp pointers/public/ThreeSum.h)
+add_library(NeetCode arrays/ValidAnagram.cpp arrays/ValidAnagram.h arrays/TwoSum.cpp arrays/TwoSum.h arrays/GroupAnagrams.cpp arrays/GroupAnagrams.h arrays/TopKFrequentElements.cpp arrays/TopKFrequentElements.h arrays/ArrayProduct.cpp arrays/ArrayProduct.h arrays/Sudoku.cpp arrays/Sudoku.h arrays/Codec.cpp arrays/Codec.h arrays/LongestSequence.cpp arrays/LongestSequence.h pointers/ValidPalindrome.cpp pointers/public/ValidPalindrome.h pointers/TwoSum2.cpp pointers/public/TwoSum2.h pointers/ThreeSum.cpp pointers/public/ThreeSum.h)
 
 target_sources(
         NeetCode
-        PRIVATE arrays/private/ContainsDuplicates.cpp
-        PUBLIC arrays/public/ContainsDuplicates.h)
+        PRIVATE arrays/ContainsDuplicates.cpp
+        PUBLIC arrays/ContainsDuplicates.h)
 
 target_include_directories(NeetCode PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 

@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/Sudoku.h"
+#include "arrays/Sudoku.h"
 #include <vector>
 
 TEST(Sudoku, solves) {

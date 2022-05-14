@@ -1,5 +1,4 @@
-#include "arrays/public/ArrayProduct.h"
-#include "iostream"
+#include "ArrayProduct.h"
 
 std::vector<int> ArrayProduct::solve(std::vector<int> &nums) {
     std::size_t n = nums.size();

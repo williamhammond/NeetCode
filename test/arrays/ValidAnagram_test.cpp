@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/ValidAnagram.h"
+#include "arrays/ValidAnagram.h"
 
 TEST(ValidAnagrams, IsValid) {
     bool result = ValidAnagram::solve("anagram", "nagaram");

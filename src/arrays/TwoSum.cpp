@@ -1,5 +1,4 @@
-#include "arrays/public/TwoSum.h"
-#include "pointers/public/TwoSum2.h"
+#include "TwoSum.h"
 
 
 vector<std::size_t> TwoSum2::solve(vector<int> &nums, int target) {

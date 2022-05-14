@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/LongestSequence.h"
+#include "arrays/LongestSequence.h"
 #include <vector>
 
 TEST(LongestSequence, solves) {

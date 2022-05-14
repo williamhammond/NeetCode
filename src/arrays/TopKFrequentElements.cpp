@@ -1,4 +1,4 @@
-#include "arrays/public/TopKFrequentElements.h"
+#include "TopKFrequentElements.h"
 
 #include <vector>
 #include <unordered_map>

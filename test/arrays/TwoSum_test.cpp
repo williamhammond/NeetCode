@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/TwoSum.h"
+#include "arrays/TwoSum.h"
 
 TEST(TwoSum, ItFindsSum) {
     std::vector<int> input = {2, 7, 11, 15};

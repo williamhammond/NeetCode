@@ -1,4 +1,4 @@
-#include "../public/ContainsDuplicates.h"
+#include "ContainsDuplicates.h"
 #include <map>
 
 

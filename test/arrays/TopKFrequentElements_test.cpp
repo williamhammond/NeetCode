@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/TopKFrequentElements.h"
+#include "arrays/TopKFrequentElements.h"
 #include <algorithm>
 #include <vector>
 

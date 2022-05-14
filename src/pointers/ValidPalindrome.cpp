@@ -1,4 +1,4 @@
-#include "pointers/public/ValidPalindrome.h"
+#include "ValidPalindrome.h"
 #include <cctype>
 #include <functional>
 

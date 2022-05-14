@@ -1,4 +1,4 @@
-#include "pointers/public/TwoSum2.h"
+#include "TwoSum2.h"
 
 #include <vector>
 

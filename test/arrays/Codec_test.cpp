@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/Codec.h"
+#include "arrays/Codec.h"
 #include <vector>
 
 TEST(Codec, serder_empty) {

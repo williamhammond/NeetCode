@@ -1,4 +1,4 @@
-#include "arrays/public/ValidAnagram.h"
+#include "ValidAnagram.h"
 
 #include<unordered_map>
 

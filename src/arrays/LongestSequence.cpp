@@ -1,5 +1,5 @@
 
-#include "arrays/public/LongestSequence.h"
+#include "LongestSequence.h"
 #include<unordered_set>
 #include <vector>
 #include <algorithm>

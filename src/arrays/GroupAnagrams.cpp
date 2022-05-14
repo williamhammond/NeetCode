@@ -1,4 +1,4 @@
-#include "arrays/public/GroupAnagrams.h"
+#include "GroupAnagrams.h"
 
 #include<algorithm>
 #include<unordered_map>

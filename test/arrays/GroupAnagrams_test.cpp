@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/GroupAnagrams.h"
+#include "arrays/GroupAnagrams.h"
 
 #include<algorithm>
 #include<unordered_map>

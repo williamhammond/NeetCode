@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../src/arrays/public/ArrayProduct.h"
+#include "arrays/ArrayProduct.h"
 #include <vector>
 
 TEST(ArrayProduct, solves) {

@@ -6,10 +6,8 @@
 using std::vector;
 
 class ContainsDuplicates {
-public:
-    static bool solve(vector<int> &nums);
-
+ public:
+  static bool solve(vector<int> &nums);
 };
 
-
-#endif //NEETCODE_CONTAINSDUPLICATES_H
+#endif  // NEETCODE_CONTAINSDUPLICATES_H

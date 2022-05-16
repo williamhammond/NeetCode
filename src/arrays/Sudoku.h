@@ -5,10 +5,8 @@
 #include <vector>
 
 class Sudoku {
-
-public:
-    static bool solve(std::vector<std::vector<char>> &board);
+ public:
+  static bool solve(std::vector<std::vector<char>> &board);
 };
 
-
-#endif //NEETCODE_SUDOKU_H
+#endif  // NEETCODE_SUDOKU_H

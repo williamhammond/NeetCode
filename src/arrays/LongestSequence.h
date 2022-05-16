@@ -5,10 +5,8 @@
 #include <vector>
 
 class LongestSequence {
-
-public:
-    static int solve(std::vector<int> &nums);
+ public:
+  static int solve(std::vector<int> &nums);
 };
 
-
-#endif //NEETCODE_LONGESTSEQUENCE_H
+#endif  // NEETCODE_LONGESTSEQUENCE_H

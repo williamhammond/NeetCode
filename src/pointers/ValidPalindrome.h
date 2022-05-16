@@ -5,10 +5,8 @@
 #include <string>
 
 class ValidPalindrome {
-public:
-    static bool solve(std::string s);
-
+ public:
+  static bool solve(std::string s);
 };
 
-
-#endif //NEETCODE_VALIDPALINDROME_H
+#endif  // NEETCODE_VALIDPALINDROME_H

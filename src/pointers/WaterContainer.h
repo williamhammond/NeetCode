@@ -4,12 +4,9 @@
 
 #include <vector>
 
-
 class WaterContainer {
-public:
-    static std::size_t solve(std::vector<int> &height);
-
+ public:
+  static std::size_t solve(std::vector<int> &height);
 };
 
-
-#endif //NEETCODE_WATERCONTAINER_H
+#endif  // NEETCODE_WATERCONTAINER_H

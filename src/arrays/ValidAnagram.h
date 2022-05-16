@@ -4,10 +4,8 @@
 #include <string>
 
 class ValidAnagram {
-public:
-    static bool solve(std::string s, std::string t);
-
+ public:
+  static bool solve(std::string s, std::string t);
 };
 
-
-#endif //NEETCODE_VALIDANAGRAM_H
+#endif  // NEETCODE_VALIDANAGRAM_H

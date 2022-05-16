@@ -4,7 +4,7 @@
 #include <vector>
 class TrappingRain {
  public:
-  int solve(std::vector<int>& height);
+  static std::size_t solve(std::vector<std::size_t>& height);
 };
 
 #endif  // NEETCODE_TRAPPINGRAIN_H

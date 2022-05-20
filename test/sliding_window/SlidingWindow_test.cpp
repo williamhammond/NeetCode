@@ -56,7 +56,7 @@ TEST(SlidingWindow,
 
 TEST(SlidingWindow, it_solves_character_replacement) {
   int actual = SlidingWindow::characterReplacement("ABAB", 2);
-  int expected = 2;
+  int expected = 4;
   EXPECT_EQ(expected, actual);
 }
 

@@ -1,6 +1,8 @@
 #include "SlidingWindow.h"
 
 #include <algorithm>
+#include <queue>
+#include <unordered_map>
 #include <unordered_set>
 
 int SlidingWindow::max_profit(std::vector<int>& prices) {
@@ -45,7 +47,27 @@ int SlidingWindow::length_of_longest_substring(std::string s) {
   return longest;
 }
 
-int SlidingWindow::characterReplacement(std::string s, int k) { return 0; }
+int SlidingWindow::characterReplacement(std::string s, int k) {
+  int freq[26]{};
+  int mostFreqLetter = 0;
+  std::size_t left = 0;
+  size_t max = 0;
+
+  for (std::size_t right = 0; right < s.length(); right++) {
+    freq[s[right] - 'A']++;
+    mostFreqLetter = std::max(mostFreqLetter, freq[s[right] - 'A']);
+
+    int lettersToChange = static_cast<int>(right - left + 1) - mostFreqLetter;
+    if (lettersToChange > k) {
+      freq[s[left] - 'A']--;
+      left++;
+    }
+
+    max = std::max(max, right - left + 1);
+  }
+
+  return max;
+}
 
 bool SlidingWindow::check_inclusion(std::string s1, std::string s2) {
   return false;

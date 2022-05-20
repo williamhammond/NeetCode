@@ -39,7 +39,15 @@ TEST(SlidingWindow, it_solves_longest_substring_with_empty_string) {
   EXPECT_EQ(expected, actual);
 }
 
-TEST(SlidingWindow, it_solves_longest_substring_with_single_character) {
+TEST(SlidingWindow, it_solves_longest_substring_with_single_char) {
+  std::string input = "a";
+  int expected = 1;
+  int actual = SlidingWindow::length_of_longest_substring(input);
+  EXPECT_EQ(expected, actual);
+}
+
+TEST(SlidingWindow,
+     it_solves_longest_substring_with_single_repeating_character) {
   std::string input = "bbbb";
   int expected = 1;
   int actual = SlidingWindow::length_of_longest_substring(input);

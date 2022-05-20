@@ -1,6 +1,7 @@
 #include "SlidingWindow.h"
 
 #include <algorithm>
+#include <unordered_set>
 
 int SlidingWindow::max_profit(std::vector<int>& prices) {
   if (prices.size() < 2) {
@@ -23,7 +24,26 @@ int SlidingWindow::max_profit(std::vector<int>& prices) {
   return result;
 }
 
-int SlidingWindow::length_of_longest_substring(std::string s) { return 0; }
+int SlidingWindow::length_of_longest_substring(std::string s) {
+  if (s.length() < 2) {
+    return static_cast<int>(s.length());
+  }
+  std::size_t left = 0;
+  std::size_t right = 1;
+
+  int longest = 0;
+  std::unordered_set<char> char_set{s[0]};
+  while (right < s.size()) {
+    if (char_set.count(s[right]) > 0) {
+      longest = std::max(longest, static_cast<int>(char_set.size()));
+      left++;
+    } else {
+      char_set.emplace(s[right]);
+    };
+    right++;
+  }
+  return longest;
+}
 
 int SlidingWindow::characterReplacement(std::string s, int k) { return 0; }
 

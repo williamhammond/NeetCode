@@ -18,6 +18,13 @@ TEST(SlidingWindow, it_solves_max_profit_with_no_gains) {
   EXPECT_EQ(expected, actual);
 }
 
+TEST(SlidingWindow, it_solves_max_profit_with_mountain_pattern) {
+  std::vector<int> prices = {1, 2, 1000, 2, 1};
+  int expected = 999;
+  int actual = SlidingWindow::max_profit(prices);
+  EXPECT_EQ(expected, actual);
+}
+
 TEST(SlidingWindow, it_solves_longest_substring) {
   std::string input = "abcabcbb";
   int expected = 3;  // "abc"

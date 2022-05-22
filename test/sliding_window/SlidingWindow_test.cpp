@@ -4,89 +4,90 @@
 #include <string>
 #include <vector>
 
+struct MaxProfit {
+  std::vector<int> prices{};
+  int expected{};
+  std::string message{};
+};
 TEST(SlidingWindow, it_solves_max_profit) {
-  std::vector<int> prices = {7, 1, 5, 3, 6, 4};
-  int expected = 5;
-  int actual = SlidingWindow::max_profit(prices);
-  EXPECT_EQ(expected, actual);
+  std::vector<MaxProfit> tests{MaxProfit{{7, 1, 5, 3, 6, 4}, 5, ""},
+                               MaxProfit{{7, 6, 4, 3, 1}, 0, ""},
+                               MaxProfit{{1, 2, 1000, 2, 1}, 999, ""}};
+  for (auto test : tests) {
+    int actual = SlidingWindow::max_profit(test.prices);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
 }
 
-TEST(SlidingWindow, it_solves_max_profit_with_no_gains) {
-  std::vector<int> prices = {7, 6, 4, 3, 1};
-  int expected = 0;
-  int actual = SlidingWindow::max_profit(prices);
-  EXPECT_EQ(expected, actual);
-}
-
-TEST(SlidingWindow, it_solves_max_profit_with_mountain_pattern) {
-  std::vector<int> prices = {1, 2, 1000, 2, 1};
-  int expected = 999;
-  int actual = SlidingWindow::max_profit(prices);
-  EXPECT_EQ(expected, actual);
-}
-
+struct LongestSubstring {
+  std::string input{};
+  int expected{};
+  std::string message{};
+};
 TEST(SlidingWindow, it_solves_longest_substring) {
-  std::string input = "abcabcbb";
-  int expected = 3;  // "abc"
-  int actual = SlidingWindow::length_of_longest_substring(input);
-  EXPECT_EQ(expected, actual);
+  std::vector<LongestSubstring> tests{
+      LongestSubstring{"abcabcbb", 3, ""},
+      LongestSubstring{"", 0, ""},
+      LongestSubstring{"a", 1, ""},
+      LongestSubstring{"bbbb", 1, ""},
+  };
+
+  for (const auto& test : tests) {
+    int actual = SlidingWindow::length_of_longest_substring(test.input);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
 }
 
-TEST(SlidingWindow, it_solves_longest_substring_with_empty_string) {
-  std::string input = "";
-  int expected = 0;
-  int actual = SlidingWindow::length_of_longest_substring(input);
-  EXPECT_EQ(expected, actual);
-}
-
-TEST(SlidingWindow, it_solves_longest_substring_with_single_char) {
-  std::string input = "a";
-  int expected = 1;
-  int actual = SlidingWindow::length_of_longest_substring(input);
-  EXPECT_EQ(expected, actual);
-}
-
-TEST(SlidingWindow,
-     it_solves_longest_substring_with_single_repeating_character) {
-  std::string input = "bbbb";
-  int expected = 1;
-  int actual = SlidingWindow::length_of_longest_substring(input);
-  EXPECT_EQ(expected, actual);
-}
+struct CharacterReplacement {
+  std::string s;
+  int k;
+  int expected;
+  std::string message;
+};
 
 TEST(SlidingWindow, it_solves_character_replacement) {
-  int actual = SlidingWindow::characterReplacement("ABAB", 2);
-  int expected = 4;
-  EXPECT_EQ(expected, actual);
+  std::vector<CharacterReplacement> tests{
+      CharacterReplacement{"ABAB", 2, 4, ""}};
+  for (const auto& test : tests) {
+    int actual = SlidingWindow::characterReplacement(test.s, test.k);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
 }
 
+struct CheckInclusion {
+  std::string s1;
+  std::string s2;
+  bool expected;
+  std::string message;
+};
 TEST(SlidingWindow, it_solves_check_inclusion) {
-  auto actual = SlidingWindow::check_inclusion("ab", "eidbaoooo");
-  EXPECT_EQ(true, actual);
+  std::vector<CheckInclusion> tests{
+      CheckInclusion{"ab", "eidbaoooo", true, ""},
+      CheckInclusion{"ab", "eidbooaoo", false, ""},
+  };
 
-  actual = SlidingWindow::check_inclusion("ab", "eidbooaoo");
-  EXPECT_EQ(false, actual);
+  for (const auto& test : tests) {
+    auto actual = SlidingWindow::check_inclusion(test.s1, test.s2);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
 }
 
+struct MinWindow {
+  std::string s;
+  std::string t;
+  std::string expected;
+  std::string message;
+};
 TEST(SlidingWindow, it_solves_min_window) {
-  std::string actual = SlidingWindow::min_window("ADOBECODEBANC", "ABC");
-  std::string expected = "BANC";
-
-  EXPECT_EQ(expected, actual);
-}
-
-TEST(SlidingWindow, it_solves_min_window_identical) {
-  std::string actual = SlidingWindow::min_window("a", "a");
-  std::string expected = "a";
-
-  EXPECT_EQ(expected, actual);
-}
-
-TEST(SlidingWindow, it_solves_min_window_when_t_is_larger) {
-  std::string actual = SlidingWindow::min_window("a", "aa");
-  std::string expected = "";
-
-  EXPECT_EQ(expected, actual);
+  std::vector<MinWindow> tests{
+      MinWindow{"ADOBECODEBANC", "ABC", "BANC", ""},
+      MinWindow{"a", "a", "a", ""},
+      MinWindow{"a", "aa", "", ""},
+  };
+  for (const auto& test : tests) {
+    std::string actual = SlidingWindow::min_window(test.s, test.t);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
 }
 
 /**
@@ -102,10 +103,18 @@ TEST(SlidingWindow, it_solves_min_window_when_t_is_larger) {
  * 1  3  -1  -3 [5  3  6] 7       6
  * 1  3  -1  -3  5 [3  6  7]      7
  */
+struct MaxSlidingWindow {
+  std::vector<int> nums;
+  int k;
+  std::vector<int> expected;
+  std::string message;
+};
 TEST(SlidingWindow, it_solves_max_sliding_window) {
-  std::vector<int> nums = {1, 3, -1, -3, 5, 3, 6, 7};
-  std::vector<int> actual = SlidingWindow::max_sliding_window(nums, 3);
-  std::vector<int> expected = {3, 3, 5, 5, 6, 7};
-
-  EXPECT_EQ(expected, actual);
+  std::vector<MaxSlidingWindow> tests{
+      MaxSlidingWindow{{1, 3, -1, -3, 5, 3, 6, 7}, 3, {3, 3, 5, 5, 6, 7}, ""}};
+  for (auto test : tests) {
+    std::vector<int> actual =
+        SlidingWindow::max_sliding_window(test.nums, test.k);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
 }

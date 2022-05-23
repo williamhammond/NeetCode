@@ -49,7 +49,7 @@ TEST(SlidingWindow, it_solves_character_replacement) {
   std::vector<CharacterReplacement> tests{
       CharacterReplacement{"ABAB", 2, 4, ""}};
   for (const auto& test : tests) {
-    int actual = SlidingWindow::characterReplacement(test.s, test.k);
+    int actual = SlidingWindow::character_replacement(test.s, test.k);
     EXPECT_EQ(test.expected, actual) << test.message;
   }
 }
@@ -62,8 +62,17 @@ struct CheckInclusion {
 };
 TEST(SlidingWindow, it_solves_check_inclusion) {
   std::vector<CheckInclusion> tests{
-      CheckInclusion{"ab", "eidbaoooo", true, ""},
-      CheckInclusion{"ab", "eidbooaoo", false, ""},
+      CheckInclusion{"a", "ab", true, "a is included in ab"},
+      CheckInclusion{"a", "b", false, "a is not included in b"},
+      CheckInclusion{"ab", "aa", false, "ab is not included in aa"},
+      CheckInclusion{"aa", "bb", false, "aa is not included in bb"},
+      CheckInclusion{"aa", "aa", true, "aa is included in aa"},
+      CheckInclusion{"adc", "dcda", true, "abc is included in dcda"},
+      CheckInclusion{"ab", "eidbaoooo", true, "ab is included in eidabooo"},
+      CheckInclusion{"ab", "eidbooaoo", false,
+                     "ab is not included in eidbooaoo"},
+      CheckInclusion{"ky", "ainwkckifykxlribaypk", true,
+                     "ky is included in ainwkckifykxlribaypk"},
   };
 
   for (const auto& test : tests) {

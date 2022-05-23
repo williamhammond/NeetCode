@@ -29,7 +29,7 @@ class SlidingWindow {
    * substring containing the same letter you can get after performing the above
    * operations.
    */
-  static int characterReplacement(std::string s, int k);
+  static int character_replacement(std::string s, int k);
 
   /**
    *  Given two strings s1 and s2, return true if s2 contains a permutation of

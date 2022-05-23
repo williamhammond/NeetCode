@@ -1,8 +1,8 @@
 #include "SlidingWindow.h"
 
 #include <algorithm>
+#include <iterator>
 #include <queue>
-#include <unordered_map>
 #include <unordered_set>
 
 int SlidingWindow::max_profit(std::vector<int>& prices) {
@@ -47,7 +47,7 @@ int SlidingWindow::length_of_longest_substring(std::string s) {
   return longest;
 }
 
-int SlidingWindow::characterReplacement(std::string s, int k) {
+int SlidingWindow::character_replacement(std::string s, int k) {
   int freq[26]{};
   int mostFreqLetter = 0;
   std::size_t left = 0;
@@ -70,6 +70,35 @@ int SlidingWindow::characterReplacement(std::string s, int k) {
 }
 
 bool SlidingWindow::check_inclusion(std::string s1, std::string s2) {
+  int s1_freq[26]{};
+  for (auto c : s1) {
+    s1_freq[c - 'a']++;
+  }
+
+  int window_freq[26]{};
+  std::size_t left{};
+  std::copy(std::begin(s1_freq), std::end(s1_freq), std::begin(window_freq));
+  for (std::size_t right = 0; right < s2.size(); right++) {
+    auto c = s2[right];
+    window_freq[c - 'a']--;
+    if (window_freq[c - 'a'] < 0) {
+      while (left <= right && window_freq[s2[left] - 'a'] < 0) {
+        window_freq[s2[left] - 'a']++;
+        left++;
+      }
+    }
+
+    bool all_0 = true;
+    for (auto count : window_freq) {
+      if (count != 0) {
+        all_0 = false;
+        break;
+      }
+    }
+    if (all_0) {
+      return true;
+    }
+  }
   return false;
 }
 

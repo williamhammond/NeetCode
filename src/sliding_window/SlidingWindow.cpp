@@ -1,7 +1,7 @@
 #include "SlidingWindow.h"
 
 #include <algorithm>
-#include <iterator>
+#include <limits>
 #include <queue>
 #include <unordered_set>
 
@@ -103,8 +103,40 @@ bool SlidingWindow::check_inclusion(std::string s1, std::string s2) {
 }
 
 std::string SlidingWindow::min_window(std::string s, std::string t) {
-  return std::string();
+  std::vector<int> t_freq(128, 0);
+  for (auto c : t) {
+    t_freq[c]++;
+  }
+
+  std::size_t counter = t.size();
+  std::size_t left = 0;
+  std::size_t right = 0;
+
+  std::size_t best_start = 0;
+  std::size_t best_length = INT64_MAX;
+  while (right < s.size()) {
+    if (t_freq[s[right]] > 0) {
+      counter--;
+    }
+    t_freq[s[right]]--;
+    right++;
+
+    while (counter == 0) {
+      if (right - left < best_length) {
+        best_start = left;
+        best_length = right - best_start;
+      }
+      if (t_freq[s[left]] == 0) {
+        counter++;
+      }
+      t_freq[s[left]]++;
+      left++;
+    }
+  }
+
+  return best_length == INT64_MAX ? "" : s.substr(best_start, best_length);
 }
+
 std::vector<int> SlidingWindow::max_sliding_window(std::vector<int>& nums,
                                                    int k) {
   return std::vector<int>();

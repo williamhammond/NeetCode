@@ -90,8 +90,12 @@ struct MinWindow {
 TEST(SlidingWindow, it_solves_min_window) {
   std::vector<MinWindow> tests{
       MinWindow{"ADOBECODEBANC", "ABC", "BANC", ""},
+      MinWindow{"ABCEFS", "ABC", "ABC", ""},
+      MinWindow{"SDFDEABC", "ABC", "ABC", ""},
+      MinWindow{"XEABCXE", "ABC", "ABC", ""},
       MinWindow{"a", "a", "a", ""},
       MinWindow{"a", "aa", "", ""},
+      MinWindow{"a", "", "", ""},
   };
   for (const auto& test : tests) {
     std::string actual = SlidingWindow::min_window(test.s, test.t);

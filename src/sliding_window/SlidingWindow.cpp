@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <limits>
+#include <map>
 #include <queue>
 #include <unordered_set>
 
@@ -139,5 +140,44 @@ std::string SlidingWindow::min_window(std::string s, std::string t) {
 
 std::vector<int> SlidingWindow::max_sliding_window(std::vector<int>& nums,
                                                    int k) {
-  return std::vector<int>();
+  std::size_t left = 0;
+  std::size_t right = k - 1;
+
+  std::vector<int> result{};
+  std::map<int, int> freq;
+  int max = INT32_MIN;
+  for (std::size_t i = left; i <= right; i++) {
+    if (freq.count(nums[i]) > 0) {
+      freq.find(nums[i])->second++;
+    } else {
+      freq.emplace(nums[i], 1);
+    }
+    if (nums[i] > max) {
+      max = nums[i];
+    }
+  }
+  result.push_back(max);
+  freq.find(nums[left])->second--;
+  if (freq.find(nums[left])->second <= 0) {
+    freq.erase(nums[left]);
+  }
+  left++;
+  right++;
+  while (right < nums.size()) {
+    if (freq.count(nums[right]) > 0) {
+      freq.find(nums[right])->second++;
+    } else {
+      freq.emplace(nums[right], 1);
+    }
+    result.push_back(freq.rbegin()->first);
+
+    freq.find(nums[left])->second--;
+    if (freq.find(nums[left])->second <= 0) {
+      freq.erase(nums[left]);
+    }
+    left++;
+    right++;
+  }
+
+  return result;
 }

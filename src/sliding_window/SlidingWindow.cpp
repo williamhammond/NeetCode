@@ -140,44 +140,17 @@ std::string SlidingWindow::min_window(std::string s, std::string t) {
 
 std::vector<int> SlidingWindow::max_sliding_window(std::vector<int>& nums,
                                                    int k) {
-  std::size_t left = 0;
-  std::size_t right = k - 1;
-
-  std::vector<int> result{};
-  std::map<int, int> freq;
-  int max = INT32_MIN;
-  for (std::size_t i = left; i <= right; i++) {
-    if (freq.count(nums[i]) > 0) {
-      freq.find(nums[i])->second++;
-    } else {
-      freq.emplace(nums[i], 1);
-    }
-    if (nums[i] > max) {
-      max = nums[i];
+  std::vector<int> result;
+  std::deque<int> dq;
+  for (int i = 0; i < nums.size(); i++) {
+    while (!dq.empty() && dq.back() < nums[i]) dq.pop_back();
+    dq.push_back(nums[i]);
+    if (i >= k - 1) {
+      result.push_back(dq.front());
+      if (nums[i - k + 1] == dq.front()) {
+        dq.pop_front();
+      }
     }
   }
-  result.push_back(max);
-  freq.find(nums[left])->second--;
-  if (freq.find(nums[left])->second <= 0) {
-    freq.erase(nums[left]);
-  }
-  left++;
-  right++;
-  while (right < nums.size()) {
-    if (freq.count(nums[right]) > 0) {
-      freq.find(nums[right])->second++;
-    } else {
-      freq.emplace(nums[right], 1);
-    }
-    result.push_back(freq.rbegin()->first);
-
-    freq.find(nums[left])->second--;
-    if (freq.find(nums[left])->second <= 0) {
-      freq.erase(nums[left]);
-    }
-    left++;
-    right++;
-  }
-
   return result;
 }

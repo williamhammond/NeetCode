@@ -142,8 +142,10 @@ std::vector<int> SlidingWindow::max_sliding_window(std::vector<int>& nums,
                                                    int k) {
   std::vector<int> result;
   std::deque<int> dq;
-  for (int i = 0; i < nums.size(); i++) {
-    while (!dq.empty() && dq.back() < nums[i]) dq.pop_back();
+  for (std::size_t i = 0; i < nums.size(); i++) {
+    while (!dq.empty() && dq.back() < nums[i]) {
+      dq.pop_back();
+    }
     dq.push_back(nums[i]);
     if (i >= k - 1) {
       result.push_back(dq.front());

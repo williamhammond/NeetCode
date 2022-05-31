@@ -124,7 +124,7 @@ struct MaxSlidingWindow {
 };
 TEST(SlidingWindow, it_solves_max_sliding_window) {
   std::vector<MaxSlidingWindow> tests{
-      //      MaxSlidingWindow{{1, -1}, 1, {1, -1}, ""},
+      MaxSlidingWindow{{1, -1}, 1, {1, -1}, ""},
       MaxSlidingWindow{{9, 10, 9, -7, -4, -8, 2, -6}, 5, {10, 10, 9, 2}, ""},
   };
   for (auto test : tests) {

@@ -51,3 +51,24 @@ TEST(Stack, it_solves_rpn) {
     EXPECT_EQ(test.expected, actual) << test.message << actual;
   }
 }
+
+struct GenerateParenthesis {
+  int n;
+  std::vector<std::string> expected;
+  std::string message;
+};
+
+TEST(Stack, it_solves_generate_parenthesis) {
+  std::vector<GenerateParenthesis> tests{
+      GenerateParenthesis{0, {""}, ""},
+      GenerateParenthesis{1, {"()"}, ""},
+      GenerateParenthesis{2, {"()()", "(())"}, ""},
+      GenerateParenthesis{
+          3, {"()()()", "()(())", "(())()", "(()())", "((()))"}, ""},
+  };
+
+  for (const auto& test : tests) {
+    auto actual = Stack::generateParenthesis(test.n);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
+}

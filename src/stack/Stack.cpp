@@ -6,6 +6,7 @@
 #include <string>
 #include <unordered_map>
 #include <unordered_set>
+#include <vector>
 
 bool Stack::isValidParens(std::string s) {
   std::stack<char> closed_stack{};
@@ -84,4 +85,24 @@ int Stack::evalRPN(std::vector<std::string>& tokens) {
     }
   }
   return stack.top();
+}
+
+static void generateParenthesisHelper(std::vector<std::string>& v,
+                                      std::string value, int left, int right) {
+  if (left == 0 && right == 0) {
+    v.push_back(value);
+    return;
+  }
+  if (right > 0) {
+    generateParenthesisHelper(v, value + ")", left, right - 1);
+  }
+  if (left > 0) {
+    generateParenthesisHelper(v, value + "(", left - 1, right + 1);
+  }
+}
+
+std::vector<std::string> Stack::generateParenthesis(int n) {
+  std::vector<std::string> result{};
+  generateParenthesisHelper(result, "", n, 0);
+  return result;
 }

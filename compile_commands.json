@@ -1,0 +1,182 @@
+[
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\ValidAnagram.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\ValidAnagram.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/ValidAnagram.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\TwoSum.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\TwoSum.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/TwoSum.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\GroupAnagrams.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\GroupAnagrams.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/GroupAnagrams.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\TopKFrequentElements.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\TopKFrequentElements.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/TopKFrequentElements.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\ArrayProduct.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\ArrayProduct.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/ArrayProduct.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\Sudoku.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\Sudoku.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/Sudoku.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\Codec.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\Codec.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/Codec.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\LongestSequence.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\LongestSequence.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/LongestSequence.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\pointers\\ValidPalindrome.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\pointers\\ValidPalindrome.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/pointers/ValidPalindrome.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\pointers\\TwoSum2.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\pointers\\TwoSum2.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/pointers/TwoSum2.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\pointers\\ThreeSum.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\pointers\\ThreeSum.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/pointers/ThreeSum.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\pointers\\WaterContainer.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\pointers\\WaterContainer.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/pointers/WaterContainer.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\pointers\\TrappingRain.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\pointers\\TrappingRain.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/pointers/TrappingRain.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\sliding_window\\SlidingWindow.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\sliding_window\\SlidingWindow.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/sliding_window/SlidingWindow.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\stack\\Stack.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\stack\\Stack.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/stack/Stack.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\stack\\MinStack.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\stack\\MinStack.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/stack/MinStack.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/src",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/NeetCode.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\NeetCode.dir\\arrays\\ContainsDuplicates.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\src\\arrays\\ContainsDuplicates.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/src/arrays/ContainsDuplicates.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\ContainsDuplicates_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\ContainsDuplicates_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/ContainsDuplicates_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\ValidAnagram_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\ValidAnagram_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/ValidAnagram_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\TwoSum_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\TwoSum_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/TwoSum_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\GroupAnagrams_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\GroupAnagrams_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/GroupAnagrams_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\TopKFrequentElements_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\TopKFrequentElements_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/TopKFrequentElements_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\ArrayProduct_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\ArrayProduct_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/ArrayProduct_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\Sudoku_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\Sudoku_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/Sudoku_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\Codec_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\Codec_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/Codec_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\arrays\\LongestSequence_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\arrays\\LongestSequence_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/arrays/LongestSequence_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\pointers\\ValidPalindrome_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\pointers\\ValidPalindrome_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/pointers/ValidPalindrome_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\pointers\\TwoSum2_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\pointers\\TwoSum2_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/pointers/TwoSum2_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\pointers\\ThreeSum_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\pointers\\ThreeSum_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/pointers/ThreeSum_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\pointers\\WaterContainer_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\pointers\\WaterContainer_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/pointers/WaterContainer_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\pointers\\TrappingRain_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\pointers\\TrappingRain_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/pointers/TrappingRain_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\sliding_window\\SlidingWindow_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\sliding_window\\SlidingWindow_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/sliding_window/SlidingWindow_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\stack\\Stack_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\stack\\Stack_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/stack/Stack_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/test",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/unit_tests.dir/includes_CXX.rsp -g -Wall -Wextra -pedantic -Werror -Wshadow -Wdouble-promotion -Wundef -Wconversion -o CMakeFiles\\unit_tests.dir\\stack\\MinStack_test.cpp.obj -c C:\\Users\\willi\\Code\\NeetCode\\test\\stack\\MinStack_test.cpp",
+  "file": "C:/Users/willi/Code/NeetCode/test/stack/MinStack_test.cpp"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/_deps/gtest-build/googletest",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\willi\\Code\\NeetCode\\cmake-build-debug\\_deps\\gtest-src\\googletest\\src\\gtest-all.cc",
+  "file": "C:/Users/willi/Code/NeetCode/cmake-build-debug/_deps/gtest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "C:/Users/willi/Code/NeetCode/cmake-build-debug/_deps/gtest-build/googletest",
+  "command": "C:\\Users\\willi\\AppData\\Local\\JetBrains\\Toolbox\\apps\\CLion\\ch-0\\221.5591.52\\bin\\mingw\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\willi\\Code\\NeetCode\\cmake-build-debug\\_deps\\gtest-src\\googletest\\src\\gtest_main.cc",
+  "file": "C:/Users/willi/Code/NeetCode/cmake-build-debug/_deps/gtest-src/googletest/src/gtest_main.cc"
+}
+]

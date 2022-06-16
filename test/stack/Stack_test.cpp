@@ -72,3 +72,24 @@ TEST(Stack, it_solves_generate_parenthesis) {
     EXPECT_EQ(test.expected, actual) << test.message;
   }
 }
+
+struct DailyTemperature {
+  std::vector<int> temperatures;
+  std::vector<int> expected;
+  std::string message;
+};
+TEST(Stack, it_solves_daily_temperatures) {
+  std::vector<DailyTemperature> tests{
+      DailyTemperature{{}, {}, ""},
+      DailyTemperature{{1}, {0}, ""},
+      DailyTemperature{{30, 60, 90}, {1, 1, 0}, ""},
+      DailyTemperature{{30, 40, 50, 60}, {1, 1, 1, 0}, ""},
+      DailyTemperature{
+          {73, 74, 75, 71, 69, 72, 76, 73}, {1, 1, 4, 2, 1, 1, 0, 0}, ""},
+  };
+
+  for (const auto& test : tests) {
+    auto actual = Stack::dailyTemperatures(test.temperatures);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
+}

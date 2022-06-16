@@ -106,3 +106,25 @@ std::vector<std::string> Stack::generateParenthesis(int n) {
   generateParenthesisHelper(result, "", n, 0);
   return result;
 }
+
+std::vector<int> Stack::dailyTemperatures(
+    const std::vector<int>& temperatures) {
+  std::vector<int> result(temperatures.size());
+
+  std::stack<std::pair<int, std::size_t>> temp_stack;
+  for (std::size_t i = 0; i < temperatures.size(); i++) {
+    auto temperature = temperatures[i];
+    while (!temp_stack.empty() && temperature > temp_stack.top().first) {
+      std::size_t temp_index = temp_stack.top().second;
+      result[temp_index] = i - temp_index;
+      temp_stack.pop();
+    }
+    temp_stack.push(std::pair<int, std::size_t>(temperature, i));
+  }
+  while (!temp_stack.empty()) {
+    std::size_t temp_index = temp_stack.top().second;
+    result[temp_index] = 0;
+    temp_stack.pop();
+  }
+  return result;
+}

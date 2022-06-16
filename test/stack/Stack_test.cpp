@@ -80,7 +80,6 @@ struct DailyTemperature {
 };
 TEST(Stack, it_solves_daily_temperatures) {
   std::vector<DailyTemperature> tests{
-      DailyTemperature{{}, {}, ""},
       DailyTemperature{{1}, {0}, ""},
       DailyTemperature{{30, 60, 90}, {1, 1, 0}, ""},
       DailyTemperature{{30, 40, 50, 60}, {1, 1, 1, 0}, ""},

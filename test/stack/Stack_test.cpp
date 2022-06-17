@@ -92,3 +92,25 @@ TEST(Stack, it_solves_daily_temperatures) {
     EXPECT_EQ(test.expected, actual) << test.message;
   }
 }
+
+struct CarFleet {
+  int target;
+  std::vector<int> position;
+  std::vector<int> speed;
+  int expected;
+  std::string message;
+};
+
+TEST(Stack, it_solves_car_fleet) {
+  std::vector<CarFleet> tests{
+      CarFleet{0, {}, {}, 0, ""},
+      CarFleet{1, {0}, {1}, 1, ""},
+      CarFleet{12, {10, 8, 0, 5, 3}, {2, 4, 1, 1, 3}, 3, ""},
+      CarFleet{100, {0, 2, 4}, {4, 2, 1}, 1, ""},
+  };
+
+  for (const auto& test : tests) {
+    auto actual = Stack::carFleet(test.target, test.position, test.speed);
+    EXPECT_EQ(test.expected, actual) << test.message;
+  }
+}

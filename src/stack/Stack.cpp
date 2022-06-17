@@ -123,3 +123,37 @@ std::vector<int> Stack::dailyTemperatures(
   }
   return result;
 }
+
+struct Car {
+  int position;
+  int speed;
+};
+
+struct CarComparator {
+  bool operator()(const Car& a, const Car& b) const {
+    return a.position < b.position;
+  }
+};
+
+int Stack::carFleet(int target, const std::vector<int>& position,
+                    const std::vector<int>& speed) {
+  std::size_t n = position.size();
+  std::vector<Car> cars{};
+  for (std::size_t i = 0; i < n; i++) {
+    auto car = Car{position[i], speed[i]};
+    cars.push_back(car);
+  }
+  std::make_heap(cars.begin(), cars.end(), CarComparator());
+  std::sort_heap(cars.begin(), cars.end(), CarComparator());
+
+  std::stack<float> time_stack;
+  for (std::size_t i = 0; i < n; i++) {
+    float time =
+        (target - cars.at(i).position) / static_cast<float>(cars.at(i).speed);
+    while (!time_stack.empty() && time >= time_stack.top()) {
+      time_stack.pop();
+    }
+    time_stack.push(time);
+  }
+  return time_stack.size();
+}

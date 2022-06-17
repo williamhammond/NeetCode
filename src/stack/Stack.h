@@ -11,6 +11,8 @@ class Stack {
   static std::vector<std::string> generateParenthesis(int n);
   static std::vector<int> dailyTemperatures(
       const std::vector<int>& temperatures);
+  static int carFleet(int target, const std::vector<int>& position,
+                      const std::vector<int>& speed);
 };
 
 #endif  // NEETCODE_SRC_STACK_STACK_H_

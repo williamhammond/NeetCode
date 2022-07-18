@@ -13,6 +13,7 @@ class Stack {
       const std::vector<int>& temperatures);
   static int carFleet(int target, const std::vector<int>& position,
                       const std::vector<int>& speed);
+  static int largestRectangleArea(const std::vector<int>& heights);
 };
 
 #endif  // NEETCODE_SRC_STACK_STACK_H_

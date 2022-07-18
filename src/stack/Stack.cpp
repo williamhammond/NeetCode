@@ -157,3 +157,5 @@ int Stack::carFleet(int target, const std::vector<int>& position,
   }
   return time_stack.size();
 }
+
+int Stack::largestRectangleArea(const std::vector<int>& heights) { return 0; }

@@ -1,8 +1,21 @@
 #include <gtest/gtest.h>
 #include <stack/Stack.h>
 
+#include <sstream>
 #include <string>
 #include <vector>
+
+std::string vec_to_string(const std::vector<int>& input) {
+  std::stringstream ss;
+  for (size_t i = 0; i < input.size(); ++i) {
+    if (i != 0) {
+      ss << ",";
+    }
+    ss << input[i];
+  }
+  std::string s = ss.str();
+  return s;
+}
 
 struct ValidParens {
   std::string s{};
@@ -112,5 +125,34 @@ TEST(Stack, it_solves_car_fleet) {
   for (const auto& test : tests) {
     auto actual = Stack::carFleet(test.target, test.position, test.speed);
     EXPECT_EQ(test.expected, actual) << test.message;
+  }
+}
+
+struct LargestRectangleArea {
+  std::vector<int> heights;
+  int expected;
+  std::string message;
+};
+
+TEST(Stack, it_solves_largest_rectangle_area) {
+  std::vector<LargestRectangleArea> tests{
+      LargestRectangleArea{{}, 0, ""},
+      LargestRectangleArea{{2, 4}, 4, ""},
+      LargestRectangleArea{
+          {1, 2, 1, 2, 1, 2},
+          6,
+          "The bottom unit of all entries create the largest area"},
+      LargestRectangleArea{{2, 1, 5, 6, 2, 3},
+                           10,
+                           "5 and 6 should create the largest rectangle"},
+      LargestRectangleArea{{1, 1, 1, 1000, 1, 1, 1},
+                           1000,
+                           "1000 alone makes the largest rectangle"},
+  };
+
+  for (const auto& test : tests) {
+    auto actual = Stack::largestRectangleArea(test.heights);
+    EXPECT_EQ(test.expected, actual) << vec_to_string(test.heights) << "\n"
+                                     << test.message;
   }
 }

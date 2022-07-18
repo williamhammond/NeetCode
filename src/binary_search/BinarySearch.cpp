@@ -8,7 +8,9 @@ int BinarySearch::search(std::vector<int>& nums, int target) {
   int left = 0;
   int right = nums.size() - 1;
   while (left <= right) {
-    int mid = left + (right - left) / 2;
+    // Prevents issues here
+    // https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
+    int mid = (left + right) >> 1;
     if (nums[mid] == target) {
       return mid;
     }

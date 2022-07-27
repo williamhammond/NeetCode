@@ -14,10 +14,23 @@ int BinarySearch::search(std::vector<int>& nums, int target) {
     if (nums[mid] == target) {
       return mid;
     }
-    if (nums[mid] > target)
+    if (nums[mid] > target) {
       right = mid - 1;
-    else
+    } else {
       left = mid + 1;
+    }
   }
   return -1;
+}
+bool BinarySearch::searchMatrix(std::vector<std::vector<int>>& matrix,
+                                int target) {
+  for (auto row : matrix) {
+    if (row[0] > target) {
+      return false;
+    }
+    if (row[row.size() - 1] >= target) {
+      return search(row, target) != -1;
+    }
+  }
+  return false;
 }

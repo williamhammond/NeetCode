@@ -19,3 +19,40 @@ TEST(BinarySearch, it_solves_search) {
     EXPECT_EQ(test.expected, actual);
   }
 }
+
+struct SearchMatrixTest {
+  std::vector<std::vector<int>> matrix;
+  int target;
+  bool expected;
+};
+
+TEST(SearchMatrixTest, it_solves_search_matrix) {
+  // clang-format off
+  std::vector<SearchMatrixTest> tests = {
+    {
+      {
+        {1, 2, 3},
+      },
+      1, true
+    },
+    {
+      {
+        {1, 2, 3},
+      },
+      0, false
+    },
+    {
+      {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
+      },
+      9, true
+    },
+  };
+  for (auto test : tests) {
+    auto actual = BinarySearch::searchMatrix(test.matrix, test.target);
+    EXPECT_EQ(test.expected, actual);
+  }
+  // clang-format on
+}
